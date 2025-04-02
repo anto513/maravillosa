@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+    --color-Dark-Blue: #064973;
+    --color-Pale-Pink: #F6E3DF;
+}
+
+/* menu y footer */
+nav, footer {
+    width: 100vw;
+}
+
+/* botones flotantes*/
+.social-menu {
+    margin-right: 15px;
+    position: fixed;
+    bottom: 5vh;
+    margin-bottom: 1px;
+    right: 0;
+    z-index: 1;
+ }
+ .social-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ .social-menu ul a {
+    border-radius: 50%;
+    background: green;
+    color: white;
+    display: block;
+    line-height: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+ }
+ 
+ .social-menu .btn-whatsapp a  {
+    font-size: 31px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 8px;
+    box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.60);
+ }
