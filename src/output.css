@@ -16,7 +16,9 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-Dark-Blue: #064973;
-    --color-Pink-Pale: #F6E3DF;
+    --color-Pale-Pink: #F6E3DF;
+    --font-BreeSerif: Bree;
+    --font-Roboto: Roboto;
   }
 }
 @layer base {
@@ -428,6 +430,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1258,6 +1263,12 @@
   .align-top {
     vertical-align: top;
   }
+  .font-BreeSerif {
+    font-family: var(--font-BreeSerif);
+  }
+  .font-Roboto {
+    font-family: var(--font-Roboto);
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -1334,6 +1345,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-Pale-Pink {
+    color: var(--color-Pale-Pink);
   }
   .capitalize {
     text-transform: capitalize;
@@ -1774,11 +1788,19 @@
     transform-box: view-box;
   }
 }
-div p {
-  color: var(--color-Pink-Pale);
+@font-face {
+  font-family: Bree;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/font/Bree_Serif/BreeSerif-Regular.ttf") format("woff2");
 }
-div ul li {
-  color: var(--color-Pink-Pale);
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/font/Roboto") format("woff2");
 }
 div ol li {
   color: var(--color-Pink-Pale);

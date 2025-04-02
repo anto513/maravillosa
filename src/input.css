@@ -1,16 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: Bree;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("./assets/font/Bree_Serif/BreeSerif-Regular.ttf") format("woff2");
+  }
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("./assets/font/Roboto") format("woff2");
+  }
+  
 @theme {
     --color-Dark-Blue: #064973;
-    --color-Pink-Pale: #F6E3DF;
-}
-
-div p {
-    color: var(--color-Pink-Pale);
-}
-
-div ul li {
-    color: var(--color-Pink-Pale);
+    --color-Pale-Pink: #F6E3DF;
+    --font-BreeSerif: Bree;
+    --font-Roboto: Roboto;
 }
 
 div ol li {
