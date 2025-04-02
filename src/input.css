@@ -2,21 +2,15 @@
 
 @theme {
     --color-Dark-Blue: #064973;
-    --color-Pink-Pale: #F6E3DF;
+    --color-Pale-Pink: #F6E3DF;
 }
 
-div p {
-    color: var(--color-Pink-Pale);
+/* menu y footer */
+nav, footer {
+    width: 100vw;
 }
 
-div ul li {
-    color: var(--color-Pink-Pale);
-}
-
-div ol li {
-    color: var(--color-Pink-Pale);
-}
-
+/* botones flotantes*/
 .social-menu {
     margin-right: 15px;
     position: fixed;
