@@ -1,5 +1,11 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties;
+@font-face {
+  font-family: Roboto;
+  src: url(../src/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+  font-family: Bree;
+  src: url(../src/assets/fonts/Bree_Serif/);
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -10,6 +16,8 @@
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-primary: Roboto, "sans-serif";
+    --font-secondary: Bree, "serif";
     --color-primary: #064973;
     --color-text: #F6E3DF;
   }
@@ -205,6 +213,12 @@
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
+  }
+  .font-primary {
+    font-family: var(--font-primary);
+  }
+  .font-secondary {
+    font-family: var(--font-secondary);
   }
   .underline {
     text-decoration-line: underline;
