@@ -1,8 +1,8 @@
 @font-face {
     font-family: Roboto;
     src: url(../src/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
-    font-family: Bree;
-    src: url(../src/assets/fonts/Bree_Serif/);
+    font-family: Gelica;
+    src: url(../src/assets/fonts/Gelica/);
 }
 
 @import "tailwindcss";
@@ -10,7 +10,7 @@
 @theme {
 
     --font-primary: Roboto, "sans-serif";
-    --font-secondary: Bree, "serif";
+    --font-secondary: Gelica, "serif";
     --color-primary: #064973;
     --color-text: #F6E3DF;
     --color-dark-text: #011221;
