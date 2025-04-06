@@ -10,6 +10,8 @@
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-dark-blue: #064973;
+    --color-pale-pink: #F6E3DF;
   }
 }
 @layer base {
@@ -181,6 +183,12 @@
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .bg-dark-blue {
+    background-color: var(--color-dark-blue);
+  }
+  .bg-pale-pink {
+    background-color: var(--color-pale-pink);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
