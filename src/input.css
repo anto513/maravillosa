@@ -2,8 +2,9 @@
 
 @theme {
 
-    --color-dark-blue: #064973;
-    --color-blue-navy: #011221;
-    --color-soft-pink: #F2D1CE;
-    --color-pale-pink: #F6E3DF;
+    --color-primary: #064973;
+    --color-text: #F6E3DF;
+    --color-dark-text: #011221;
+    --color-secondary: #F2D1CE;
+    
 }

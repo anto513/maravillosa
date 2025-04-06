@@ -10,8 +10,8 @@
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-dark-blue: #064973;
-    --color-pale-pink: #F6E3DF;
+    --color-primary: #064973;
+    --color-text: #F6E3DF;
   }
 }
 @layer base {
@@ -181,17 +181,37 @@
       max-width: 96rem;
     }
   }
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .bg-dark-blue {
-    background-color: var(--color-dark-blue);
+  .resize {
+    resize: both;
   }
-  .bg-pale-pink {
-    background-color: var(--color-pale-pink);
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-text {
+    background-color: var(--color-text);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
 }
 @property --tw-rotate-x {
@@ -219,6 +239,16 @@
   inherits: false;
   initial-value: skewY(0);
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -227,6 +257,8 @@
       --tw-rotate-z: rotateZ(0);
       --tw-skew-x: skewX(0);
       --tw-skew-y: skewY(0);
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
     }
   }
 }
