@@ -16,8 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify"
+    "dev": "npx @tailwindcss/cli -i .dist/src/input.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i .dist/src/input.css -o ./dist/styles.css --minify"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.3",
