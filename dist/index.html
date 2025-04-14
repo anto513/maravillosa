@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Maravillosa</title>
 </head>
 
-<body class="bg-primary font-primary text-primary-text">
-    <header class="flex columns-12">
-        <nav class="flex justify-between">
-            <img class="columns-4" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
-            <div class="columns-5">
-                <a class="pr-5" href="#Identidad">Identidad</a>
-                <a class="pr-5" href="#Productos">Productos</a>
-                <a class="pr-5" href="#Como_comprar">Cómo comprar</a>
-                <a class="pr-5" href="#Contacto">Contacto</a>
+<body class="bg-primary font-primary text-primary-text relative min-h-screen overflow-hidden">
+
+    <header class="relative">
+
+        <nav class="px-4 py-4 sm:flex sm:items-center justify-between">
+            <div class="flex justify-between">
+                <img class="h-8" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
+                <button class="text-primary-text sm:hidden">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
+                        <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col itmes-start mt-3 gap-2 sm:flex-row sm:m-0">
+                <a class="pr-5 text-left" href="#Identidad">Identidad</a>
+                <a class="pr-5 text-left" href="#Productos">Productos</a>
+                <a class="pr-5 text-left" href="#Como_comprar">Cómo comprar</a>
+                <a class="pr-5 text-left" href="#Contacto">Contacto</a>
             </div>
         </nav>
+
     </header>
 
-    <main class="container mx-auto">
+    <main class="container w-md mx-auto px-24">
         <div id="Identidad">
             <div>
                 <img>
@@ -91,21 +101,27 @@
     <!-- Empieza boton flotante  -->
     <div class="social-menu">
         <a href="https://wa.link/ph8ddf">
-            <img src="../src/assets/icons/icon_whatsapp.svg">
+            <img class="fill-current" src="../src/assets/icons/icon_whatsapp.svg">
         </a>
     </div>
     <!-- Termina boton flotante  -->
 
-    <footer class="bg-primary-text flex flex-row" id="Contacto">
+    <footer class="bg-secondary relative w-80 flex flex-row" id="Contacto">
         <div class="">
             <h3 class="text-primary font-semibold">Contacto</h3>
-            <p class="text-dark-text"><b>Email:</b> <a class="underline" href="mailto:maravillosa.lp@gmail.com">maravillosa.lp@gmail.com</a></p>
-            <p class="text-dark-text"><b>Whatsapp:</b> <a class="underline" href="https://wa.me/5492215546218">221 554-6218</a></p>
+            <div>
+                <img>
+                <a class="text-dark-text underline" href="mailto:maravillosa.lp@gmail.com">maravillosa.lp@gmail.com</a>
+            </div>
+            <div>
+                <img>
+                <a class="text-dark-text underline" href="https://wa.me/5492215546218">221 554-6218</a>
+            </div>
         </div>
         <div class="">
             <h3 class="text-primary font-semibold">Visitame en Instagram</h3>
-            <div>
-                <img src="../src/assets/icons/icon_Instagram.svg">
+            <div class="justify-center items-center">
+                <img class="h-6" src="../src/assets/icons/icon_Instagram.svg">
                 <p class="text-dark-text"><a class="underline" href="https://www.instagram.com/maravillosa.lp">maravillosa.lp</a></p>
             </div>
         </div>
