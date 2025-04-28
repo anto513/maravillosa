@@ -7,13 +7,12 @@
     <title>Maravillosa</title>
 </head>
 
-<body class="bg-primary font-primary text-primary-text relative min-h-screen overflow-hidden">
+<body class="bg-primary font-primary text-primary-text relative">
 
-    <header class="relative">
-
+    <header class="flex justify-between items-center p-4">
         <nav class="px-4 py-4 sm:flex sm:items-center justify-between">
             <div class="flex justify-between">
-                <img class="h-8" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
+                <img class="h-6 md:h-8" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
                 <button class="text-primary-text sm:hidden">
                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
                         <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"></path>
@@ -21,21 +20,20 @@
                 </button>
             </div>
             <div class="flex flex-col itmes-start mt-3 gap-2 sm:flex-row sm:m-0">
-                <a class="pr-5 text-left" href="#Identidad">Identidad</a>
-                <a class="pr-5 text-left" href="#Productos">Productos</a>
-                <a class="pr-5 text-left" href="#Como_comprar">Cómo comprar</a>
-                <a class="pr-5 text-left" href="#Contacto">Contacto</a>
+                <a class="pr-5 text-left hover:underline" href="#Identidad">Identidad</a>
+                <a class="pr-5 text-left hover:underline" href="#Productos">Productos</a>
+                <a class="pr-5 text-left hover:underline" href="#Como_comprar">Cómo comprar</a>
+                <a class="pr-5 text-left hover:underline" href="#Contacto">Contacto</a>
             </div>
         </nav>
-
     </header>
 
     <main class="container w-md mx-auto px-24">
-        <div id="Identidad">
+        <div id="Identidad" class="flex flex-col md:flex-row items-center gap-4 p-6 max-w-6xl mx-auto">
             <div>
-                <img>
+                <img src="" alt="" class="">
             </div>
-            <div class="font-secondary">
+            <div class="font-secondary text-l max-w-xl">
                 <p>Maravillosa fusiona la riqueza cultural oriental, especialmente japonesa.</p>
                 <p>Aportamos belleza y autenticidad, creando piezas que no solo adornan espacios, sino que también cuentan historias.</p>
                 <p>Cada producto es una expresión de aprecio y conexión cultural.</p>
@@ -43,53 +41,58 @@
         </div>
 
         <div id="Productos">
-            <div>
-                <p>Podés ver todos los productos disponibles desde el catálogo</p>
+            <div class="flex flex-col items-center p-6">
+                <p class="text-m">Podés ver todos los productos disponibles desde el catálogo</p>
                 <div class="button-catalog">
                     <a type="button" href="https://wa.me/c/5492215546218"><p class="text-primary font-semibold">Ver catálogo</p></a>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <p>Llavero grulla</p>
+        </div>
+
+        <!-- Galería scroll horizontal -->
+        <div class="p-6 my-8 overflow-hidden bg-secondary rounded-lg">
+            <div class="scroll-gallery flex overflow-x-auto gap-4 snap-x snap-mandatory w-full" id="gallery">
+                <div class="snap-start shrink-0 text-dark-text p-4 w-64">
+                    <img src="" alt="" class="mx-auto">
+                    <p class="text-center mt-2">Llavero grulla</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Amuleto kusudama</p>
+                <div class="snap-start shrink-0 text-dark-text p-4 w-64">
+                    <img src="" alt="" class="mx-auto">
+                    <p class="text-center mt-2">Amuleto kusudama</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Lapicero</p>
+                <div class="snap-start shrink-0 text-dark-text p-4 w-64">
+                    <img src="" alt="" class="mx-auto">
+                    <p class="text-center mt-2">Lapicero</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Tarjetas grulla</p>
+                <div class="snap-start shrink-0 text-dark-text p-4 w-64">
+                    <img src="" alt="" class="mx-auto">
+                    <p class="text-center mt-2">Tarjetas grulla</p>
                 </div>
             </div>
         </div>
+        <!-- Termina Galería -->
 
-        <div class="mx-auto" id="Como_comprar">
-            <h2>Cómo comprar</h2>
-            <b>Desde catálogo Whatsapp:</b>
-            <ol>
+        <div id="Como_comprar" class="p-6 max-w-4xl mx-auto text-sm space-y-4">
+            <h2 class="text-lg font-bold">Cómo comprar</h2>
+            <p class="font-semibold">Desde catálogo Whatsapp:</p>
+            <ol class="list-decimal list-inside">
                 <li>Ingresar al <a type="button" class="underline" href="https://wa.me/c/5492215546218">catálogo</a> de la cuenta de empresa</li>
                 <li>Hacer click en los productos que quieras agregar, con el botón <b>”+”</b></li>
                 <li>Apretar el botón “Enviar solicitud de pedido” para comenzar la gestión de compra</li>
             </ol>
-            <b>Mensaje a Whatsapp:</b>
-            <ol>
+            <p class="font-semibold">Mensaje a Whatsapp:</p>
+            <ol class="list-decimal list-inside">
                 <li>Escribir un <a class="underline" href="https://wa.link/ph8ddf">mensaje al whatsapp</a> consultando por los productos que quieras comprar</li>
                 <li>Comienza la gestión de compra</li>
             </ol>
 
-            <h2>Territorio:</h2>
-            <ul>
+            <h2 class="text-lg font-bold">Territorio:</h2>
+            <ul class="list-disc list-inside">
                 <li>Las ventas son dentro de La Plata y cercanías. Las entregas se hacen dentro del casco urbano de La Plata, con encuentro a coordinar.</li>
             </ul>
 
-            <h2>Medios de pago y entrega:</h2>
-            <ul>
+            <h2 class="text-lg font-bold">Medios de pago y entrega:</h2>
+            <ul class="list-disc list-inside">
                 <li>Los medios de pago son efectivo o transferencia bancaria.</li>
                 <li>Para efectuar la compra por transferencia, se debe enviar comprobante de compra previo a coordinar la entrega.</li>
                 <li><p>Si elegís pagar en efectivo, se reserva el producto por una semana, en ese tiempo coordinamos la entrega y se paga una vez que nos encontremos.</p> 
@@ -106,19 +109,16 @@
     </div>
     <!-- Termina boton flotante  -->
 
-    <footer class="bg-secondary relative w-80 flex flex-row" id="Contacto">
-        <div class="">
+    <footer id="Contacto" class="bg-secondary relative w-80 flex flex-row">
+        <div class="flex flex-col md:flex-row justify-between gap-4">
             <h3 class="text-primary font-semibold">Contacto</h3>
             <div>
-                <img>
+                <img src="" alt="" class="">
                 <a class="text-dark-text underline" href="mailto:maravillosa.lp@gmail.com">maravillosa.lp@gmail.com</a>
             </div>
             <div>
-                <img>
+                <img src="" alt="" class="">
                 <a class="text-dark-text underline" href="https://wa.me/5492215546218">221 554-6218</a>
-            </div>
-        </div>
-        <div class="">
             <h3 class="text-primary font-semibold">Visitame en Instagram</h3>
             <div class="justify-center items-center">
                 <img class="h-6" src="../src/assets/icons/icon_Instagram.svg">
@@ -126,5 +126,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        let scrollAmount = 0;
+        gallery.addEventListener('scroll', () => {
+          if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+            gallery.appendChild(gallery.firstElementChild);
+            gallery.scrollLeft -= gallery.firstElementChild.offsetWidth;
+          }
+        });
+    </script>
 </body>
 </html>

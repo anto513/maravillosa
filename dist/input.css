@@ -47,3 +47,8 @@ header, footer{
     right: 0;
     z-index: 1;
 }
+
+/* Scroll horizontal para galería */
+.scroll-gallery::-webkit-scrollbar {
+    display: none;
+  }
