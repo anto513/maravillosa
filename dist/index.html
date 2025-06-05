@@ -9,27 +9,30 @@
 
 <body class="bg-primary font-primary text-primary-text relative">
 
-    <header class="flex justify-between items-center p-4">
-        <nav class="px-4 py-4 sm:flex sm:items-center justify-between">
-            <div class="flex justify-between">
-                <img class="h-6 md:h-8" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
-                <button class="text-primary-text sm:hidden">
+    <header class="fixed w-full">
+        <nav class="px-4 py-4">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <img class="h-6 mr-3 sm:h-9" src="../src/assets/images/LOGOTIPO_MARAVILLOSA_MENU.png" alt="logo de maravillosa">
+                <button class="text-primary-text sm:hidden" onClick="">
                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
                         <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"></path>
                     </svg>
                 </button>
-            </div>
-            <div class="flex flex-col itmes-start mt-3 gap-2 sm:flex-row sm:m-0">
-                <a class="pr-5 text-left hover:underline" href="#Identidad">Identidad</a>
-                <a class="pr-5 text-left hover:underline" href="#Productos">Productos</a>
-                <a class="pr-5 text-left hover:underline" href="#Como_comprar">Cómo comprar</a>
-                <a class="pr-5 text-left hover:underline" href="#Contacto">Contacto</a>
+            
+                <div class="lg:flex items-center justify-between w-full lg:w-auto lg:order-1">
+                    <ul class="flex flex-col sm:hidden lg:flex-row lg:space-x-8 mt-4">
+                        <li><a class="block px-3 py-2 hover:underline" href="#Identidad">Identidad</a></li>
+                        <li><a class="block px-3 py-2 hover:underline" href="#Productos">Productos</a></li>
+                        <li><a class="block px-3 py-2 hover:underline" href="#Como_comprar">Cómo comprar</a></li>
+                        <li><a class="block px-3 py-2 hover:underline" href="#Contacto">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="container w-md mx-auto px-24">
-        <div id="Identidad" class="flex flex-col md:flex-row items-center gap-4 p-6 max-w-6xl mx-auto">
+    <section id="Identidad">
+        <div class="flex flex-col md:flex-row items-center gap-4 p-6 max-w-6xl mx-auto">
             <div>
                 <img src="" alt="" class="">
             </div>
@@ -39,8 +42,10 @@
                 <p>Cada producto es una expresión de aprecio y conexión cultural.</p>
             </div>
         </div>
+    </section>
 
-        <div id="Productos">
+    <section id="Productos">
+        <div>
             <div class="flex flex-col items-center p-6">
                 <p class="text-m">Podés ver todos los productos disponibles desde el catálogo</p>
                 <div class="button-catalog">
@@ -70,36 +75,30 @@
                 </div>
             </div>
         </div>
+    </section>
         <!-- Termina Galería -->
 
-        <div id="Como_comprar" class="p-6 max-w-4xl mx-auto text-sm space-y-4">
+    <section id="Como_comprar">
+        <div class="p-6 max-w-4xl mx-auto text-sm space-y-4">
+            <p class="text-md font-bold">Las ventas son dentro de La Plata y cercanías. Las entregas se hacen dentro del casco urbano de La Plata, con encuentro a coordinar.</p>
+
             <h2 class="text-lg font-bold">Cómo comprar</h2>
             <p class="font-semibold">Desde catálogo Whatsapp:</p>
             <ol class="list-decimal list-inside">
                 <li>Ingresar al <a type="button" class="underline" href="https://wa.me/c/5492215546218">catálogo</a> de la cuenta de empresa</li>
-                <li>Hacer click en los productos que quieras agregar, con el botón <b>”+”</b></li>
-                <li>Apretar el botón “Enviar solicitud de pedido” para comenzar la gestión de compra</li>
+                <li>Hacer click en los productos que quieras agregar, con el botón "<b class="text-lg">+</b>"</li>
+                <li>Hacer click en el botón “<b>Enviar solicitud de pedido</b>” para comenzar la gestión de compra</li>
             </ol>
-            <p class="font-semibold">Mensaje a Whatsapp:</p>
-            <ol class="list-decimal list-inside">
-                <li>Escribir un <a class="underline" href="https://wa.link/ph8ddf">mensaje al whatsapp</a> consultando por los productos que quieras comprar</li>
-                <li>Comienza la gestión de compra</li>
-            </ol>
-
-            <h2 class="text-lg font-bold">Territorio:</h2>
-            <ul class="list-disc list-inside">
-                <li>Las ventas son dentro de La Plata y cercanías. Las entregas se hacen dentro del casco urbano de La Plata, con encuentro a coordinar.</li>
-            </ul>
 
             <h2 class="text-lg font-bold">Medios de pago y entrega:</h2>
             <ul class="list-disc list-inside">
-                <li>Los medios de pago son efectivo o transferencia bancaria.</li>
+                <li>Se acepta efectivo o transferencia bancaria.</li>
                 <li>Para efectuar la compra por transferencia, se debe enviar comprobante de compra previo a coordinar la entrega.</li>
-                <li><p>Si elegís pagar en efectivo, se reserva el producto por una semana, en ese tiempo coordinamos la entrega y se paga una vez que nos encontremos.</p> 
-                    <p>Si pasa más de una semana sin efectuarse la entrega, se pierde la reserva (sin excepciones).</p></li>
+                <li>Si elegís pagar en efectivo, se reserva el producto por una semana, en ese tiempo coordinamos la entrega y se paga cuando se retira. *</li>
+                * Si pasa más de una semana sin efectuarse la entrega, se pierde la reserva (sin excepciones).
             </ul>
         </div>
-    </main>
+    </section>
 
     <!-- Empieza boton flotante  -->
     <div class="social-menu">
